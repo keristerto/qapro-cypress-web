@@ -14,19 +14,15 @@ describe("Login", () => {
    it("Login com email inválido", () => {
       cy.visit('https://automationpratice.com.br/login')
       cy.get('#btnLogin').click()
-      cy.get('.invalid_input').should('be.visible').should('have.text','E-mail inválido.')
+      cy.get('.invalid_input').should('be.visible').should('have.text', 'E-mail inválido.')
 
    })
 
-  it("Login com senha inválido", () => {
+   it("Login com senha inválido", () => {
       cy.visit('https://automationpratice.com.br/login')
       cy.get('#user').type('kterto@gmail.com')
       cy.get('#btnLogin').click()
-      cy.get('.invalid_input').should('be.visible').should('have.text','Senha inválida.')
-
-   })
-
-   it("Login com usuario inexistente", () => {
+      cy.get('.invalid_input').should('be.visible').should('have.text', 'Senha inválida.')
 
    })
 })
