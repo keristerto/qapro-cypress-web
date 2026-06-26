@@ -10,7 +10,6 @@ describe("Login", () => {
          .should('have.text', 'Login realizado')
 
    })
-
    it("Login com email inválido", () => {
       cy.visit('https://automationpratice.com.br/login')
       cy.get('#btnLogin').click()

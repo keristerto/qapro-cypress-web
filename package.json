@@ -8,8 +8,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keristerto/qapro-cypress-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keristerto/qapro-cypress-web/issues"
+  },
+  "homepage": "https://github.com/keristerto/qapro-cypress-web#readme",
   "description": "",
-  "dependencies": {
-    "cypress": "^15.17.0"
+  "devDependencies": {
+    "cypress": "^15.18.0"
   }
 }
